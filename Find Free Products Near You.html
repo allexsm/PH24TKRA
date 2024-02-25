@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:7722/ -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.7.4];shiny-javascript[1.7.4];selectize[0.12.4];htmlwidgets[1.6.1];leaflet[1.3.1];leafletfix[1.0.0];proj4[2.6.2];Proj4Leaflet[1.0.1];rstudio_leaflet[1.3.1];leaflet-binding[2.1.2];bootstrap[3.4.1]</script>
+<script src="./Find Free Products Near You_files/jquery.min.js.download"></script>
+<link href="./Find Free Products Near You_files/shiny.min.css" rel="stylesheet">
+<script src="./Find Free Products Near You_files/shiny.min.js.download"></script>
+<link href="./Find Free Products Near You_files/selectize.bootstrap3.css" rel="stylesheet">
+<script src="./Find Free Products Near You_files/selectize.min.js.download"></script>
+<script src="./Find Free Products Near You_files/selectize-plugin-a11y.min.js.download"></script>
+<script src="./Find Free Products Near You_files/htmlwidgets.js.download"></script>
+<link href="./Find Free Products Near You_files/leaflet.css" rel="stylesheet">
+<script src="./Find Free Products Near You_files/leaflet.js.download"></script>
+<link href="./Find Free Products Near You_files/leafletfix.css" rel="stylesheet">
+<script src="./Find Free Products Near You_files/proj4.min.js.download"></script>
+<script src="./Find Free Products Near You_files/proj4leaflet.js.download"></script>
+<link href="./Find Free Products Near You_files/rstudio_leaflet.css" rel="stylesheet">
+<script src="./Find Free Products Near You_files/leaflet(1).js.download"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./Find Free Products Near You_files/bootstrap.min.css" rel="stylesheet">
+<link href="./Find Free Products Near You_files/bootstrap-accessibility.min.css" rel="stylesheet">
+<script src="./Find Free Products Near You_files/bootstrap.min.js.download"></script>
+<script src="./Find Free Products Near You_files/bootstrap-accessibility.min.js.download"></script>  <title>Find Free Products Near You</title>
+<script src="./Find Free Products Near You_files/leaflet-providers_1.9.0.js.download"></script><script src="./Find Free Products Near You_files/leaflet-providers-plugin.js.download"></script></head>
+<body data-new-gr-c-s-check-loaded="14.1156.0" data-gr-ext-installed="">
+  <div class="container-fluid">
+    <h2>Find Free Products Near You</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <form class="well" role="complementary">
+          <div class="form-group shiny-input-container">
+            <label class="control-label" id="category-label" for="category-selectized">Choose a category:</label>
+            <div>
+              <select id="category" tabindex="-1" class="selectized shiny-bound-input" style="display: none;"><option value="Tampons" selected="selected">Tampons</option></select><div class="selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Tampons">Tampons</div><input type="text" autocomplete="off" tabindex="" id="category-selectized" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="2ov91pzc7m" style="width: 4px;"></div><div class="selectize-dropdown single plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" role="listbox" id="2ov91pzc7m"></div></div></div>
+              <script type="application/json" data-for="category" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-8" role="main">
+        <div class="leaflet html-widget html-widget-output shiny-report-size html-fill-item-overflow-hidden html-fill-item shiny-bound-output leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="map" style="width: 100%; height: 400px; visibility: inherit; position: relative;" aria-live="polite" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="./Find Free Products Near You_files/25755@2x.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(473px, 32px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25754@2x.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(473px, -224px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25755@2x(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(217px, 32px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25755@2x(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(729px, 32px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25756@2x.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(473px, 288px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25754@2x(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(217px, -224px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25754@2x(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(729px, -224px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25756@2x(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(217px, 288px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25756@2x(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(729px, 288px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25755@2x(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-39px, 32px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25755@2x(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(985px, 32px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25754@2x(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-39px, -224px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25754@2x(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(985px, -224px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25756@2x(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-39px, 288px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Find Free Products Near You_files/25756@2x(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(985px, 288px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="./Find Free Products Near You_files/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(679px, 89px, 0px);"><img src="./Find Free Products Near You_files/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(593px, 336px, 0px);"><img src="./Find Free Products Near You_files/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(371px, 374px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="./Find Free Products Near You_files/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(679px, 89px, 0px); z-index: 89;"><img src="./Find Free Products Near You_files/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(593px, 336px, 0px); z-index: 336;"><img src="./Find Free Products Near You_files/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(371px, 374px, 0px); z-index: 374;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(4.70456e+06px, 6.59345e+06px, 0px) scale(32768);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://127.0.0.1:7722/#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://127.0.0.1:7722/#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a></div></div></div></div>
+      </div>
+    </div>
+  </div>
+
+
+<div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
